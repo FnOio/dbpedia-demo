@@ -1,0 +1,32 @@
+{
+  "name": "dbpedia-demo",
+  "version": "1.0.0",
+  "description": "Online demo of the new DBpedia Extraction Framework using RML and FnO",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FnOio/dbpedia-demo.git"
+  },
+  "keywords": [
+    "DBpedia",
+    "Linked",
+    "Data",
+    "generation",
+    "RML",
+    "FnO"
+  ],
+  "author": "Ben De Meester",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FnOio/dbpedia-demo/issues"
+  },
+  "homepage": "https://github.com/FnOio/dbpedia-demo#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "multer": "^1.2.1"
+  }
+}
