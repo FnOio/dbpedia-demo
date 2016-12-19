@@ -69,6 +69,8 @@ function close(res, file, status, output, cb) {
     });
 }
 
-app.listen(9999, function () {
-    console.log('Example app listening on port 9999!')
+var port = process.argv[2] || 8999;
+
+app.listen(port, function () {
+    console.log('Example app listening on port ' + port + '!');
 });
