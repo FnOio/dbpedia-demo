@@ -7,6 +7,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="assets/css/freelancer.min.css" rel="stylesheet"/>
+    <link href="node_modules/nprogress/nprogress.css" rel="stylesheet"/>
+
     <link href="assets/css/style.css" rel="stylesheet"/>
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -1761,37 +1763,29 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="node_modules/nprogress/nprogress.js"></script>
 <!--<script src="assets/js/script.js"></script>-->
 <script>
-    var output = '<http://en.dbpedia.org/resource/Belgium> a <http://dbpedia.org/ontology/Country> ;\n\
-    <http://dbpedia.org/ontology/timeZone> "http://en.dbpedia.org/resource/Central_European_Time" ;\n\
-    <http://dbpedia.org/ontology/foundingDate> "1839-04-19" ;\n\
-    <http://dbpedia.org/ontology/officialLanguage> "http://en.dbpedia.org/resource/Dutch_language" , "http://en.dbpedia.org/resource/French_language" , "http://en.dbpedia.org/resource/German_language" ;\n\
-    <http://dbpedia.org/ontology/longName> "Kingdom of Belgium" ;\n\
-    <http://dbpedia.org/ontology/leaderTitle> "Prime Minister" ;\n\
-    <http://dbpedia.org/ontology/leader> "http://en.dbpedia.org/resource/Philippe_of_Belgium" ;\n\
-    <http://dbpedia.org/ontology/populationDensity> "363.58468065625044" ;\n\
-    <http://dbpedia.org/ontology/foundingDate> "1830-10-04" ;\n\
-    <http://www.w3.org/2003/01/geo/wgs84_pos#long> "latitude" ;\n\
-    <http://dbpedia.org/ontology/leader> "http://en.dbpedia.org/resource/Charles_Michel" ;\n\
-    <http://dbpedia.org/ontology/areaTotal> "3.0528E10" ;\n\
-    <http://dbpedia.org/ontology/leaderTitle> "Monarch" ;\n\
-    <http://dbpedia.org/ontology/demonym> "Belgian" ;\n\
-    <http://dbpedia.org/ontology/capital> "http://en.dbpedia.org/resource/City_of_Brussels" ;\n\
-    <http://dbpedia.org/ontology/anthem> "http://en.dbpedia.org/resource/Brabançonne" ;\n\
-    <http://dbpedia.org/ontology/largestCity> "http://en.dbpedia.org/resource/Antwerp" , "http://en.dbpedia.org/resource/Charleroi" ;\n\
-    <http://dbpedia.org/ontology/percentageOfAreaWater> "6.4" ;\n\
-    <http://dbpedia.org/ontology/flag> "Flag of Belgium.svg" ;\n\
-    <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "latitude" ;\n\
-    <http://dbpedia.org/ontology/areaTotal> "3.0528189856530434E10" ;\n\
-    <http://dbpedia.org/ontology/governmentType> "http://en.dbpedia.org/resource/Federalism" , "http://en.dbpedia.org/resource/Constitutional_monarchy" ;\n\
-    <http://dbpedia.org/ontology/populationDensity> "363.6" ;\n\
-    <http://dbpedia.org/ontology/language> "http://en.dbpedia.org/resource/Dutch_language" , "http://en.dbpedia.org/resource/French_language" , "http://en.dbpedia.org/resource/German_language" ;\n\
-    <http://xmlns.com/foaf/0.1/name> "Belgium" ;\n\
-    <http://dbpedia.org/ontology/currency> "http://en.dbpedia.org/resource/Euro" .';
     $(function() {
-        $('#run').on('click', function() {
-            $('#tab-orig-output').html('<pre><code>' + output.replace(/</g, '&lt;').replace(/>/g, '&gt;' ) + '</code></pre>');
+        $('#run').on('click', function (e) {
+            e.stopPropagation();
+            NProgress.start();
+            $.ajax({
+                type: "POST",
+                url: 'http://edutab.test.iminds.be:8999/_dbpedia',
+                data: $('#tab-orig').find('code').text().replace(/&lt;/g, '<').replace(/&gt;/g, '>'),
+                headers: {'Content-Type': 'text/plain'},
+                success: function (data, status, jqXHR) {
+                    if (jqXHR.status !== 200) {
+                        $('#tab-orig-output').html('<pre><code>Something went wrong, please try again, or refresh the page</code></pre>');
+                    }
+                    else {
+                        $('#tab-orig-output').html('<pre><code>' + data.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</code></pre>');
+                    }
+                    NProgress.done();
+                }
+            });
+
         });
     });
 </script>

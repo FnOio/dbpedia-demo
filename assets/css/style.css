@@ -17,3 +17,12 @@ pre code {
 #input pre {
     max-height: 720px;
 }
+
+#nprogress .bar {
+    background: white;
+}
+
+#nprogress .spinner-icon {
+    border-top-color: white;
+    border-left-color: whitesmoke;
+}
