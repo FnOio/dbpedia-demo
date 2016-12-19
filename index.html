@@ -1783,6 +1783,10 @@
                         $('#tab-orig-output').html('<pre><code>' + data.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</code></pre>');
                     }
                     NProgress.done();
+                },
+                error: function() {
+                    $('#tab-orig-output').html('<pre><code>Something went wrong, please try again, or refresh the page</code></pre>');
+                    NProgress.done();
                 }
             });
 
