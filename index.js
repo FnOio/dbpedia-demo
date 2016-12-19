@@ -10,6 +10,12 @@ var fs = require('fs'),
 app.use(bodyParser.text({limit: '1mb'})); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
+app.use(function(req, res, next) { // cross-origin! :D
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
 app.post('/_dbpedia', upload.array(), function (req, res, next) {
     var doc = req.body;
     var file = path.resolve(__dirname, 'tmp', '' + (new Date()).getTime() + '.map.ttl');
