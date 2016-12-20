@@ -1772,7 +1772,7 @@
             NProgress.start();
             $.ajax({
                 type: "POST",
-                url: 'http://edutab.test.iminds.be:8999/_dbpedia',
+                url: 'https://edutab.test.iminds.be:8998/_dbpedia',
                 data: $('#tab-orig').find('code').text().replace(/&lt;/g, '<').replace(/&gt;/g, '>'),
                 headers: {'Content-Type': 'text/plain'},
                 success: function (data, status, jqXHR) {
