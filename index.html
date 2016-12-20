@@ -1770,6 +1770,7 @@
         $('#run').on('click', function (e) {
             e.stopPropagation();
             NProgress.start();
+            $('#tab-orig-output').html('<pre><code>Fetching the content, please hold on...</code></pre>');
             $.ajax({
                 type: "POST",
                 url: 'https://edutab.test.iminds.be:8998/_dbpedia',
