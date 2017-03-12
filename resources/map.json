@@ -1,0 +1,2352 @@
+{
+  "@context": {
+    "rr": "http://www.w3.org/ns/r2rml#",
+    "rml": "http://semweb.mmlab.be/ns/rml#",
+    "fno": "http://w3id.org/function/ontology#",
+    "fnml": "http://semweb.mmlab.be/ns/fnml#",
+    "dbf": "http://dbpedia.org/function/"
+  },
+  "dbf:doc": {
+    "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country",
+    "@type": "rr:TriplesMap",
+    "rml:logicalSource": {
+      "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+    },
+    "rr:subjectMap": {
+      "@type": "rr:SubjectMap",
+      "rr:termType": {
+        "@id": "rr:IRI"
+      },
+      "rr:constant": {
+        "@value": "http://en.dbpedia.org/resource/{{wikititle}}"
+      }
+    },
+    "rr:predicateObjectMap": [
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/anthem"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm0",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv0",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "national_anthem"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/anthem"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm0",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv0",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "royal_anthem"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/areaTotal"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm1",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv1",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "Area"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "area_km2"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:unitParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "squareKilometre"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/areaTotal"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm2",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv2",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "Area"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "area_sq_mi"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:unitParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "squareMile"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/capital"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm3",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv3",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "capital"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/currency"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm4",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv4",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "currency"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/demonym"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm5",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv5",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "rdf:langString"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "demonym"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/ethnicGroup"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm6",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv6",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "ethnic_groups"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/ethnicGroupsInYear"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm7",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv7",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "xsd:gYear"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "ethnic_groups_year"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/flag"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm8",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv8",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "xsd:string"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "image_flag"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://xmlns.com/foaf/0.1/name"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm9",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv9",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "rdf:langString"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "common_name"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://xmlns.com/foaf/0.1/name"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm9",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv9",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "rdf:langString"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "native_name"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/foundingDate"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm10",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv10",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "xsd:date"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "established_date1"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/foundingDate"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm10",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv10",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "xsd:date"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "established_date2"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/foundingDate"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm10",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv10",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "xsd:date"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "established_date9"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/governmentType"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm11",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv11",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "government_type"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/language"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm12",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv12",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "languages"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/language"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm12",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv12",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "official_languages"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/language"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm12",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv12",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "regional_languages"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/largestCity"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm13",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv13",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "largest_city"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/largestSettlement"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm14",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv14",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "largest_settlement"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/leader"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm15",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv15",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "leader_name1"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/leader"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm15",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv15",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "leader_name2"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/leader"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm15",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv15",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "leader_name3"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/leader"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm15",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv15",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "leader_name4"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/leader"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm15",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv15",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "leader_name5"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/leaderTitle"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm16",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv16",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "rdf:langString"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "leader_title1"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/leaderTitle"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm16",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv16",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "rdf:langString"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "leader_title2"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/leaderTitle"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm16",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv16",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "rdf:langString"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "leader_title3"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/leaderTitle"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm16",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv16",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "rdf:langString"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "leader_title4"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/leaderTitle"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm16",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv16",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "rdf:langString"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "leader_title5"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/longName"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm17",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv17",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "rdf:langString"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "conventional_long_name"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/map"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm18",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv18",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "image_map"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/map"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm18",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv18",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "image_map2"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/motto"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm19",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv19",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "xsd:string"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "national_motto"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/officialLanguage"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm20",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv20",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "official_languages"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/percentageOfAreaWater"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm21",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv21",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "xsd:float"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "percent_water"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/populationDensity"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm22",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv22",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "PopulationDensity"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "population_density_km2"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:unitParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "inhabitantsPerSquareKilometre"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/populationDensity"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm23",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv23",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "PopulationDensity"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "population_density_sq_mi"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:unitParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "inhabitantsPerSquareMile"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/populationTotal"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm24",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv24",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "xsd:nonNegativeInteger"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "population_estimate"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/regionalLanguage"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm25",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv25",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "regional_languages"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@type": "rr:PredicateObjectMap",
+        "rr:predicate": {
+          "@id": "http://dbpedia.org/ontology/timeZone"
+        },
+        "rr:objectMap": {
+          "@type": "fnml:FunctionTermMap",
+          "@id": "http://test.example.com/ftm26",
+          "fnml:functionValue": {
+            "@id": "http://test.example.com/fv26",
+            "rml:logicalSource": {
+              "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource"
+            },
+            "rr:subjectMap": {
+              "@type": "fno:Execution"
+            },
+            "rr:predicateObjectMap": [
+              {
+                "rr:predicate": {
+                  "@id": "fno:executes"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@id": "dbf:simplePropertyFunction"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:dataTypeParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rr:constant": {
+                    "@value": "owl:Thing"
+                  }
+                }
+              },
+              {
+                "rr:predicate": {
+                  "@id": "dbf:propertyParameter"
+                },
+                "rr:objectMap": {
+                  "@type": "rr:ObjectMap",
+                  "rml:reference": {
+                    "@value": "time_zone"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "dbf:source": {
+    "@id": "http://en.dbpedia.org/resource/Mapping_en:Infobox_country/Infobox_country/LogicalSource",
+    "@type": "http://semweb.mmlab.be/ns/rml#LogicalSource",
+    "rml:source": {
+      "@value": "http://en.wikipedia.org/wiki/Mapping_en:Infobox_country?oldid=35237"
+    },
+    "rml:referenceFormulation": {
+      "@id": "http://semweb.mmlab.be/ns/ql#wikitext"
+    },
+    "rml:iterator": {
+      "@value": "Infobox"
+    }
+  }
+}
