@@ -12,11 +12,14 @@ if (!fs.existsSync(path.resolve(__dirname, 'tmp'))) {
 
 var config = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'config.json'), 'utf8'));
 var http = require('http');
-var https = require('https');
-var privateKey = fs.readFileSync(config.key, 'utf8');
-var certificate = fs.readFileSync(config.cert, 'utf8');
+var https = null;
+if (config.https) {
+    https = require('https');
+    var privateKey = fs.readFileSync(config.key, 'utf8');
+    var certificate = fs.readFileSync(config.cert, 'utf8');
 
-var credentials = {key: privateKey, cert: certificate};
+    var credentials = {key: privateKey, cert: certificate};
+}
 
 app.use(bodyParser.text({limit: '1mb'})); // for parsing application/json
 app.use(bodyParser.urlencoded({extended: true})); // for parsing application/x-www-form-urlencoded
@@ -81,13 +84,14 @@ var port = process.argv[2] || 8999;
 
 
 var httpServer = http.createServer(app);
-var httpsServer = https.createServer(credentials, app);
-
 httpServer.listen(port, function () {
     console.log('Example app listening on port ' + port + '!');
 });
 
-port -= 1;
-httpsServer.listen(port, function () {
-    console.log('Example https  app listening on port ' + port + '!');
-});
+if (config.https) {
+    var httpsServer = https.createServer(credentials, app);
+    port -= 1;
+    httpsServer.listen(port, function () {
+        console.log('Example https  app listening on port ' + port + '!');
+    });
+}
