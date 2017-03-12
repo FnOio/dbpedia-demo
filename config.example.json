@@ -1,5 +1,6 @@
 {
   "cert": "",
   "key": "",
-  "https": true
+  "https": true,
+  "endpoint": "http://localhost:3000/"
 }
