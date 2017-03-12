@@ -58,9 +58,8 @@
                                 <label for="uri" class="floating-label-form-group">URI</label>
                                 <input id="uri" type="text" class="form-control" value="http://en.dbpedia.org/resource/{{wikititle}}"/>
                             </div>
-                            <pre><code>
-{"MAP": true}
-                            </code></pre>
+                            <hr/>
+                            <div id="poms"></div>
                         </div>
                     </div>
 
@@ -171,10 +170,51 @@
 
     function hydrateMap(map) {
         $('#uri').val(map['dbf:doc']['rr:subjectMap']['rr:constant']['@value']);
+        var poms = map['dbf:doc']['rr:predicateObjectMap'];
+        var $pomDiv = $('#poms');
+        for (var i = 0; i < poms.length; i++) {
+            var fn = {};
+            var fnPoms = poms[i]['rr:objectMap']['fnml:functionValue']['rr:predicateObjectMap'];
+            for (var j = 0; j < fnPoms.length; j++) {
+                var inbetween = fnPoms[j]['rr:objectMap']['rr:constant'] ? fnPoms[j]['rr:objectMap']['rr:constant'] : fnPoms[j]['rr:objectMap']['rml:reference'];
+                var value = inbetween['@id'] ? inbetween['@id'] : inbetween['@value'];
+                fn[fnPoms[j]['rr:predicate']['@id']] = value;
+            }
+            var $el = $('<div>' +
+                '<div class="form-group">' +
+                '<label for="pom_' + i + '">Predicate</label>' +
+                '<input class="form-control" type="text" id="pom_' + i + '" value="' + poms[i]['rr:predicate']['@id'] + '"/>' +
+                '</div>' +
+                '<div class="form-group">' +
+                '<label for="fnPom_' + i + '">Function</label>' +
+                '<input class="form-control" type="text" id="fnPom_' + i + '" value="' + fn['fno:executes'] + '"/>' +
+                '</div>' +
+                '<div class="form-group">' +
+                '<label for="inputPom' + i + '">Input</label>' +
+                '<input class="form-control" type="text" id="inputPom_' + i + '" value="' + fn['dbf:propertyParameter'] + '"/>' +
+                '</div>' +
+                '</div><hr/>');
+            $pomDiv.append($el);
+        }
+
     }
 
     function generateMap(map) {
         map['dbf:doc']['rr:subjectMap']['rr:constant']['@value'] = $('#uri').val();
+        var poms = map['dbf:doc']['rr:predicateObjectMap'];
+        var $pomDiv = $('#poms');
+        for (var i = 0; i < poms.length; i++) {
+            poms[i]['rr:predicate']['@id'] = $('#pom_' + i).val();
+            var fnPoms = poms[i]['rr:objectMap']['fnml:functionValue']['rr:predicateObjectMap'];
+            for (var j = 0; j < fnPoms.length; j++) {
+                if (fnPoms[j]['rr:predicate'] === 'fno:executes') {
+                    fnPoms[j]['rr:objectMap']['rr:constant']['@id'] = $('#fnPom_' + i).val();
+                }
+                if (fnPoms[j]['rr:predicate'] === 'dbf:propertyParameter') {
+                    fnPoms[j]['rr:objectMap']['rml:refernce']['@value'] = $('#inputPom_' + i).val();
+                }
+            }
+        }
         return map;
     }
 </script>
