@@ -54,6 +54,10 @@
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="tab-orig">
+                            <div class="form-group">
+                                <label for="uri" class="floating-label-form-group">URI</label>
+                                <input id="uri" type="text" class="form-control" value="http://en.dbpedia.org/resource/{{wikititle}}"/>
+                            </div>
                             <pre><code>
 {"MAP": true}
                             </code></pre>
@@ -136,8 +140,9 @@
 </script>
 <script>
     $(function () {
+        hydrateMap(map);
         $('#run').on('click', function (e) {
-            map = generateMap();
+            map = generateMap(map);
             e.stopPropagation();
             NProgress.start();
             $('#tab-orig-output').html('<pre><code>Fetching the content, please hold on...</code></pre>');
@@ -164,7 +169,12 @@
         });
     });
 
-    function generateMap() {
+    function hydrateMap(map) {
+        $('#uri').val(map['dbf:doc']['rr:subjectMap']['rr:constant']['@value']);
+    }
+
+    function generateMap(map) {
+        map['dbf:doc']['rr:subjectMap']['rr:constant']['@value'] = $('#uri').val();
         return map;
     }
 </script>
