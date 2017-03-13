@@ -38,9 +38,42 @@
 <section id="demo">
     <div class="container">
         <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false"
+                                   aria-controls="collapseOne">
+                                    About
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <p>
+                                    This demo allows you to edit the mapping document that generates DBpedia data.
+                                    You can select different examples to the left,
+                                    and edit the different elements of the mapping document.
+                                    Afterwards, click <kbd>generate</kbd> button to let the RMLProcessor on the server generate some new DBpedia.
+                                </p>
+
+                                <p>
+                                    Go ahead! Change the resource URI, change the functions that transform the original data,
+                                    or go crazy and edit the original RML document under the <kbd>source</kbd> tab.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-sm-12">
                 <p style="text-align: center">
-                    <button class="btn btn-primary" id="run">Run the mapping</button>
+                    Let's
+                    <button class="btn btn-primary" id="run">generate</button>
+                    some DBpedia data!
                 </p>
             </div>
         </div>

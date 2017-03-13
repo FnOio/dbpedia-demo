@@ -26,3 +26,7 @@ pre code {
     border-top-color: white;
     border-left-color: whitesmoke;
 }
+
+section#demo {
+    padding: 20px 0;
+}
