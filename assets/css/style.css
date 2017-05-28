@@ -14,19 +14,6 @@ pre code {
     white-space: pre;
 }
 
-#input pre {
-    max-height: 720px;
-}
-
-#nprogress .bar {
-    background: white;
-}
-
-#nprogress .spinner-icon {
-    border-top-color: white;
-    border-left-color: whitesmoke;
-}
-
-section#demo {
-    padding: 20px 0;
+a {
+  cursor: pointer;
 }
