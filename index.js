@@ -11,6 +11,11 @@ if (!fs.existsSync(path.resolve(__dirname, 'tmp'))) {
   fs.mkdirSync(path.resolve(__dirname, 'tmp'));
 }
 
+var apicache = require("apicache");
+var cache = apicache.middleware;
+
+app.use(cache('5 hours'));
+
 var config = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'config.json'), 'utf8'));
 var http = require('http');
 var https = null;
